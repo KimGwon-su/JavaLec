@@ -18,7 +18,8 @@ public class NestedTest {
 			System.out.println("홀수입니다.");
 		}
 		
-		
+		int b;
+		b = Integer.parseInt(JOptionPane.showInputDialog("어서오세요"));
 		
 		
 		}
