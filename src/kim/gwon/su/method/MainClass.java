@@ -1,10 +1,7 @@
 package kim.gwon.su.method;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JOptionPane;
 
 public class MainClass {
 
@@ -30,23 +27,25 @@ public class MainClass {
 
 		List<Integer>list = new ArrayList<Integer>();
 
-		while(list.size() < 100) {
+		while(list.size() < 51) {
+			System.out.println("list.size(): " + list.size());
 			double randomNum = Math.random();
 			System.out.println("randomNum: " + randomNum);
 			int random = (int)(randomNum*100)+1;
-//			System.out.println(random);
+			System.out.println(random);
 			if(list.contains(random)) {
 				continue;
+			}else {
+				list.add(random);
 			}
-			list.add(random);
 		}	
 		
-		/*
-		for(int i=0 ; i<list.size() ; i++) {
+		
+		for(int i=0 ; i<100 ; i++) {
 			
 			System.out.println(list.get(i));
 		}
-		*/
+		
 	}
 }
 
