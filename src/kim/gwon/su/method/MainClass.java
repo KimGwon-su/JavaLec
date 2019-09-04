@@ -28,11 +28,11 @@ public class MainClass {
 		List<Integer>list = new ArrayList<Integer>();
 
 		while(list.size() < 51) {
-			System.out.println("list.size(): " + list.size());
+			
 			double randomNum = Math.random();
-			System.out.println("randomNum: " + randomNum);
+			
 			int random = (int)(randomNum*100)+1;
-			System.out.println(random);
+			
 			if(list.contains(random)) {
 				continue;
 			}else {
